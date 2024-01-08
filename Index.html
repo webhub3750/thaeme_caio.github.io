@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Site</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+  <header>
+    <h1>Meu Site</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Página Inicial</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="banner">
+    <img src="Kiry.png" alt="Banner">
+    <div class="banner-content">
+    </div>
+  </div>
+
+  <main>
+    <section>
+      <h2>Bem-vindo ao meu site!</h2>
+      <div class="carousel">
+        <div><img src="imagem1.jpg" alt="Imagem 1"></div>
+        <div><img src="imagem2.jpg" alt="Imagem 2"></div>
+        <div><img src="imagem3.jpg" alt="Imagem 3"></div>
+        <div><img src="imagem4.jpg" alt="Imagem 4"></div>
+        <div><img src="imagem5.jpg" alt="Imagem 5"></div>
+        <div><img src="imagem6.jpg" alt="Imagem 6"></div>
+        <div><img src="imagem1.jpg" alt="Imagem 1"></div>
+        <div><img src="imagem2.jpg" alt="Imagem 2"></div>
+        <div><img src="imagem3.jpg" alt="Imagem 3"></div>
+        <div><img src="imagem4.jpg" alt="Imagem 4"></div>
+      </div>
+      
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+            ]
+          });
+        });
+      </script>
+
+
+      <p>Escolha uma opção:</p>
+      <div class="button-container">
+        <a href="pagina1.html"><img src="imagem1.jpg" alt="Botão 1"></a>
+        <a href="pagina2.html"><img src="imagem2.jpg" alt="Botão 2"></a>
+        <a href="pagina3.html"><img src="imagem3.jpg" alt="Botão 3"></a>
+        <a href="pagina4.html"><img src="imagem4.jpg" alt="Botão 4"></a>
+        <a href="pagina5.html"><img src="imagem5.jpg" alt="Botão 5"></a>
+        <a href="pagina6.html"><img src="imagem6.jpg" alt="Botão 6"></a>
+      </div>
+    </section>
+  </main>
+  <p>.</p>
+  <p>.</p>
+  <p>.</p>
+  <footer>
+    <p>&copy; 2024 Meu Site</p>
+  </footer>
+</body>
+</html>
